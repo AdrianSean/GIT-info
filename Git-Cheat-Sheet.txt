@@ -141,6 +141,9 @@ git stash
 [Apply stash changes to the repo ready for staging & commiting]
 git stash apply
 
+[Merge changes from branch to working copy]
+git merge BranchNameToMergeFrom
+
 
 
 
