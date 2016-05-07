@@ -1,6 +1,23 @@
 [Create a new  GIT repo]
 git init
 
+[add entry to config file]
+git config user.name "Adrian Gurnett"
+
+[remove entry from config file]
+git confg --unset user.name
+
+[display key/value settings of config file]
+cat .git/config
+
+[List the settings for the config file at different levels]
+git config --global --list (local config file - applies to all repos)
+git config --local --list (local user config file, applies to all repos, overwrites global)
+git config .git/config (local repo config file, overwrites local)
+
+[open config in a spefic editor i.e.: Visual Studio Code]
+Code .git/config  
+
 [Add all new files to the repo - ready to be staged for next commit]
 git add -A
 
@@ -24,8 +41,44 @@ mv MyFile.txt My_New_File_Name.txt
 
 [View the log of commits, type q to escape]
 git log
+git log --oneline (more condensed view)
+
+[Edited a file but want to revert changes]
+git checkout MyFile.txt
+
+[List the contents of folder]
+ls -la
+
+[remove a commit from the repo & also any staged changes]
+git reset --hard
+
+[remove a commit from the repo but leave the changes in the staging area]
+git reset --soft HEAD~1
+
+[Clean a directory, removes any temp files perhaps generated automatically, untracked files, etc]
+git clean -n  (tells you what files it will be removing)
+git clean -f  (does the actual removal)
+
+[Ignore files to be commited to repo]
+# create a .gitignore file in root of repo
+# add list of files to ignore in it 
+   i.e.: /foldername/*.fileextension
+# add(stage) & commit this .gitignore file to repo
 
 
+
+[list urls for the origin repo if cloned]
+git remote -v
+
+[list branches setup in the repo]
+git branch
+git branch -r (list remote branches)
+
+[list tags in the repo]
+git tag
+
+
+    
 
 
 
