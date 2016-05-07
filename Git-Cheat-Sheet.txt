@@ -4,9 +4,25 @@ git init
 [Add all new files to the repo]
 git add -A
 
-[Add specific files to the repo - known as staged commits]
+[Add specific files to the repo - known as a staged commit]
 git add "MyFile.txt"
 
 [Commit the changes]
 git commit -m "My commit message"
+
+[Get latest status on the repo]
+git status
+
+[Delete a file]
+rm MyFile.txt 
+
+[Stage the delete for the next commit]
+git add -u
+
+[Rename a file]
+mv MyFile.txt My_New_File_Name.txt
+
+
+
+
 
