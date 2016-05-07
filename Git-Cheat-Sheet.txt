@@ -67,8 +67,27 @@ git clean -f  (does the actual removal)
 
 
 
+
+
+/*** WORKING WITH REMOTE REPOS, TAGS & MERGING ***/
+
+[Clone a remote repo]
+git clone URL
+
 [list urls for the origin repo if cloned]
 git remote -v
+
+[Get latest from remote repo, only updates the remote repo (origin/master)]
+git fetch
+
+[Merge changes from remote repo into local repo]
+git merge
+
+[get latest from remote repo and merge into local repo in one go -- same as doing: git-fetch; git-merge]
+git pull
+
+[update the remote repo with commits done in local repo]
+git push
 
 [list branches setup in the repo]
 git branch
@@ -76,6 +95,12 @@ git branch -r (list remote branches)
 
 [list tags in the repo]
 git tag
+
+[make a tag locally]
+git tag MyTagName
+
+[add local tag(s) to remote repo]
+git push --tags
 
 
     
