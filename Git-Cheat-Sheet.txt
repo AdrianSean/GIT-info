@@ -93,10 +93,6 @@ git pull
 [update the remote repo with commits done in local repo]
 git push
 
-[list branches setup in the repo]
-git branch
-git branch -r (list remote branches)
-
 [list tags in the repo]
 git tag
 
@@ -141,13 +137,28 @@ git stash
 [Apply stash changes to the repo ready for staging & commiting]
 git stash apply
 
-[Merge changes from branch to working copy]
+[Merge all changes from a branch to working copy]
 git merge BranchNameToMergeFrom
 
+[MOVE the changes from a working copy (branch) to another repo (master) but make it look like the commits were always done on the other repo (master)]
+git rebase TheRepoToMergeTo
 
+[Merge a single specific commit from a branch to working copy repo]
+git cherry-pick The CommitSha
 
+[list branches setup in the repo]
+git branch
+git branch -r (list remote branches)
 
-    
+[get latest from remot branch]
+git fetch origin BranchName
 
+[Apply changes to remote branch/Add branch to remote]
+git push origin BranchName
+git push (if the remote branch is tracked, this happens automatically if it was cloned)
 
+[Make a copy of the branch in remote]
+git push origin MyBranchName:MyNewBranchName
 
+[Delete a remote branch]
+git push origin :MyBranchName
