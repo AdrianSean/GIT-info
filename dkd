@@ -1,0 +1,66 @@
+[33mcommit bae0fbbd732bafdd157cfc862d33de484deb27b9[m
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat May 7 14:36:12 2016 +0100
+
+    doing another staged commit this time for blah.txt
+
+[33mcommit a9cbf57252f55f7efef5863d83c292dcc52ba2e8[m
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat May 7 14:22:40 2016 +0100
+
+    Added new file as test
+
+[33mcommit 0bdb5981650cc90c02f9af27ae679f8615cb9f42[m
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat Mar 12 18:00:19 2016 +0000
+
+    Changes that will be pushed to github
+
+[33mcommit b705850bd0ffe5bad3234e7c86e4c21e78e31e99[m
+Merge: 8bcb7ae 63d6c2a
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat Mar 12 17:41:59 2016 +0000
+
+    Merge https://github.com/adriansean/githubdemo
+
+[33mcommit 63d6c2a3763ac6f06d1e1aded0039ecc8ae90db9[m
+Author: AdrianSean <adrian.gurnett@gmail.com>
+Date:   Sat Mar 12 17:23:53 2016 +0000
+
+    Initial commit
+
+[33mcommit 8bcb7ae25378e294d6e3c3407c53910d74719b4a[m
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat Mar 12 17:16:22 2016 +0000
+
+    v2.0 further changes
+
+[33mcommit e32ca0dc864a38efee1ed72643a4ff68043bbbac[m
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat Mar 12 17:15:37 2016 +0000
+
+    v2.0 changes
+
+[33mcommit 8b215500e90dfe922a367910eb0f10dede7506fe[m
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat Mar 12 17:07:58 2016 +0000
+
+    Stashed changes
+
+[33mcommit ae9f288cc988a95dd508fb0863f5c034bbe05e3e[m
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat Mar 12 17:00:08 2016 +0000
+
+    update to file 2
+
+[33mcommit d51b362ac862508f9a4f21b7564bdaa3ae9f5f26[m
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat Mar 12 16:58:09 2016 +0000
+
+    update to file 1
+
+[33mcommit c19ec6e00ef954b7c9e23974b438436e75e67c7d[m
+Author: Adrian Gurnett <adrian.gurnett@gmail.com>
+Date:   Sat Mar 12 16:57:32 2016 +0000
+
+    initial commit to masrter branch
