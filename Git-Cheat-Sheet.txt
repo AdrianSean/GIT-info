@@ -1,0 +1,12 @@
+[Create a new  GIT repo]
+git init
+
+[Add all new files to the repo]
+git add -A
+
+[Add specific files to the repo - known as staged commits]
+git add "MyFile.txt"
+
+[Commit the changes]
+git commit -m "My commit message"
+
