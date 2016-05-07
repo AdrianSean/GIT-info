@@ -9,6 +9,7 @@ git confg --unset user.name
 
 [display key/value settings of config file]
 cat .git/config
+cat ~/.gitconfig  (global version)
 
 [List the settings for the config file at different levels]
 git config --global --list (local config file - applies to all repos)
@@ -17,6 +18,9 @@ git config .git/config (local repo config file, overwrites local)
 
 [open config in a spefic editor i.e.: Visual Studio Code]
 Code .git/config  
+
+[Create an alias shortcut cmd for a GIT cmd]
+git config alias.MyAliasShortcut "The GIT cmd i want to abbreviate"
 
 [Add all new files to the repo - ready to be staged for next commit]
 git add -A
@@ -101,6 +105,37 @@ git tag MyTagName
 
 [add local tag(s) to remote repo]
 git push --tags
+
+[delete a tag locally]
+git tag -d MyTagName
+
+[delete a tag from remote repo - once its deleted locally]
+git push origin :ref/tags/MyTagName
+
+
+
+
+
+/**** BRANCHING *****/
+
+[Create a branch]
+git branch MyBranchName (branches from the HEAD of working repo copy)
+git branch MyBranchName TheCommitSha (use this to branch off a specific commit sha # of working repo copy)
+
+[Switch from current repo to a branch]
+git checkout MyBranchName
+
+[Rename a branch]
+git branch -m MyBranchName MyNewBranchName
+
+[Delete a branch]
+git branch -d MyBranchName (will not delete however if its not been merged)
+git branch -D MyBranchName (forces a deletion without prompt if its not merged)
+
+[Restore a deleted branch]  (WARNING: GIT only keeps these for 30 days, garbage collection removes after that)
+git branch MyBranchName TheCommitSha 
+
+
 
 
     
