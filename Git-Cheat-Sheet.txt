@@ -135,6 +135,12 @@ git branch -D MyBranchName (forces a deletion without prompt if its not merged)
 [Restore a deleted branch]  (WARNING: GIT only keeps these for 30 days, garbage collection removes after that)
 git branch MyBranchName TheCommitSha 
 
+[Stash changes to a pending/holding area, changes you dont want to stage & commit yet but dont want to lose either]
+git stash
+
+[Apply stash changes to the repo ready for staging & commiting]
+git stash apply
+
 
 
 
