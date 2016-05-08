@@ -22,6 +22,9 @@ Code .git/config
 [Create an alias shortcut cmd for a GIT cmd]
 git config alias.MyAliasShortcut "The GIT cmd i want to abbreviate"
 
+[Add ALL files & subfolders to the repo - ready to be staged for next commit]
+git add .
+
 [Add all new files to the repo - ready to be staged for next commit]
 git add -A
 
