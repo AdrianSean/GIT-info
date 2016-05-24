@@ -56,11 +56,11 @@ git checkout MyFile.txt
 [List the contents of folder]
 ls -la
 
-[remove a commit from the repo & also any staged changes]
+[remove a commit from the repo & also any staged changes, useful when wanting to revert a merge]
 git reset --hard
 
 [remove a commit from the repo but leave the changes in the staging area]
-git reset --soft HEAD~1
+git reset --soft
 
 [Clean a directory, removes any temp files perhaps generated automatically, untracked files, etc]
 git clean -n  (tells you what files it will be removing)
@@ -120,9 +120,11 @@ git push origin :ref/tags/MyTagName
 [Create a branch]
 git branch MyBranchName (branches from the HEAD of working repo copy)
 git branch MyBranchName TheCommitSha (use this to branch off a specific commit sha # of working repo copy)
+git branch --track MyBranchName origin/MyRemoteBranchName (creates a branch that is tracked to a remote repo)
 
 [Switch from current repo to a branch]
 git checkout MyBranchName
+git checkout -b MyBranchName  (shortcut syntax for creating and switching to a new branch in one go)
 
 [Rename a branch]
 git branch -m MyBranchName MyNewBranchName
@@ -140,6 +142,9 @@ git stash
 [Apply stash changes to the repo ready for staging & commiting]
 git stash apply
 
+[Clear down the contents of stash]
+git stash --clear
+
 [Merge all changes from a branch to working copy]
 git merge BranchNameToMergeFrom
 
@@ -152,6 +157,7 @@ git cherry-pick The CommitSha
 [list branches setup in the repo]
 git branch
 git branch -r (list remote branches)
+git branch -a (list all branches i.e.: remote & local)
 
 [get latest from remot branch]
 git fetch origin BranchName
@@ -165,3 +171,6 @@ git push origin MyBranchName:MyNewBranchName
 
 [Delete a remote branch]
 git push origin :MyBranchName
+
+[Display origin repo details & what local branches are tracked]
+git remote show origin
