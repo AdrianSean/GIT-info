@@ -111,7 +111,14 @@ git tag -d MyTagName
 [delete a tag from remote repo - once its deleted locally]
 git push origin :ref/tags/MyTagName
 
+[add an origin to the local repo]
+git add remote origin <URL OF REPO>
 
+[delete an remote repo link from the local repo]
+git remote rm origin
+
+[ensure the local repo is tracking the remote repo so PULL requests can be made]
+git branch --set-upstream-to=upstream/<branchname>
 
 
 
